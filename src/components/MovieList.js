@@ -29,7 +29,7 @@ export const MovieList = () => {
         <div>
             <div className='heading wrapper'>
             <h2 className='heading_color'>Movies</h2>
-            <input type='text' className='search_movie' value={search} onChange={handleSearch} placeholder='Search Movies...' />
+            <input type='search' className='search_movie' value={search} onChange={handleSearch} placeholder='Search Movies...' />
             </div>
             <Movie movies={movies} />
         </div>
