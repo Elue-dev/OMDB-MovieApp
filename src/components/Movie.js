@@ -9,10 +9,10 @@ export const Movie = ({movies}) => {
         localStorage.setItem('Movie', JSON.stringify(items))
     }
 
-    useEffect(() => {
-        const movieFavourite = JSON.parse(localStorage.getItem('Movie'))
-        setFavourites(movieFavourite)
-    },[])
+    // useEffect(() => {
+    //     const movieFavourite = JSON.parse(localStorage.getItem('Movie'))
+    //     setFavourites(movieFavourite)
+    // },[])
     
     const addFavourites = (movie) => {
         const newFavourite = [...favourites, movie ]
